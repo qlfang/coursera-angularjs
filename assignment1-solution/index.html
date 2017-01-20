@@ -1,46 +1,27 @@
-
 <!doctype html>
-
 <html lang="en">
-
 <head>
-
     <title>Lunch Checker</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="styles/bootstrap.min.css">
-
     <script src="angular.min.js"></script>
-
     <script src="app.js"></script>
-
 </head>
 
 <body>
-
 <div class="container" ng-app="LunchCheck" ng-controller="LunchCheckController">
-
     <h1>Lunch Checker</h1>
-
     <div class="panel panel-default">
-
         <div class="panel-body">
-
             <div class="form-group" ng-class="{'has-success': status == 'OK', 'has-error': status == 'ERROR'}">
-
                 <input ng-model="dishes" type="text" class="form-control"
-
                        placeholder="list comma separated dishes you usually have for lunch">
-
             </div>
 
             <div>
-
                 <button class="btn btn-default" ng-click="checkLunch()">Check If Too Much</button>
                 <br>
                 <strong ng-bind="message" ng-class="{'text-success': status == 'OK', 'text-danger': status == 'ERROR'}"></strong>
-
             </div>
 
         </div>
@@ -48,8 +29,6 @@
     </div>
 
 </div>
-
-
 
 </body>
 
